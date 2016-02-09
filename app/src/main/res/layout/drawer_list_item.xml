@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <ImageView
+        android:src="@drawable/ic_action_video"
+        android:paddingLeft="16dp"
+        android:id="@+id/nav_option_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:paddingLeft="72dp"
+        android:text="Film"
+        style="@style/MyStyle"
+        android:id="@+id/nav_option_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:alpha="0.87"/>
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="320dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/drawer_header"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:clickable="true">
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/toolbarShadow"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/drawer_header"
+        android:background="@drawable/header_shadow"
+        android:visibility="visible"
+        />
+
+    <ListView
+        android:id="@+id/drawer_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarShadow"
+        android:choiceMode="singleChoice"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:footerDividersEnabled="true"
+        android:clipToPadding="false"
+        android:paddingBottom="45dp"/>
+</RelativeLayout>

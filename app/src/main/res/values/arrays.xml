@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="drawer_options">
+        <item>Film</item>
+        <item>Books</item>
+        <item>Music</item>
+    </string-array>
+
+    <string-array name="content_items">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
+        <item>Item 5</item>
+        <item>Item 6</item>
+        <item>Item 7</item>
+    </string-array>
+
+    <string-array name="music_array">
+        <item>Chet Baker</item>
+        <item>Bob Dylan</item>
+        <item>BB King</item>
+        <item>The Beatles</item>
+        <item>Radiohead</item>
+    </string-array>
+
+    <string-array name="television_array">
+    <item>Madmen</item>
+    <item>True Detective</item>
+    <item>Narcos</item>
+    <item>Curb Your Enthusiasm</item>
+    </string-array>
+
+    <string-array name="film_array">
+        <item>Darjeeling Unlimited</item>
+        <item>Shutter Island</item>
+        <item>The Master</item>
+        <item>The Immigrant</item>
+        <item>The Graduate</item>
+    </string-array>
+
+    <string-array name="books_array">
+        <item>The Sound and the Fury</item>
+        <item>100 Years of Solitude</item>
+    </string-array>
+
+    <integer-array name="film_images">
+    </integer-array>
+    <integer-array name="television_images">
+    </integer-array>
+    <integer-array name="music_images">
+</integer-array>
+<integer-array name="books_images">
+</integer-array>
+</resources>

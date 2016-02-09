@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:id="@+id/toolbarHolder">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="0dp"
+            android:layout_weight=".4"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            />
+        <FrameLayout
+            android:id="@+id/toolbarDivider"
+            android:layout_width="1dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:background="@color/split_toolbar_divider_color"/>
+
+        <include
+            layout="@layout/toolbar"
+            android:id="@+id/secondaryToolbar"
+            android:layout_width="0dp"
+            android:layout_weight=".6"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            />
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/toolbarShadow"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@+id/toolbarHolder"
+        android:background="@drawable/header_shadow"
+        />
+
+    <android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- The main content view -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <FrameLayout
+            android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            />
+
+    </RelativeLayout>
+    <!-- The navigation drawer -->
+    <include layout="@layout/nav_drawer_layout"/>
+
+</android.support.v4.widget.DrawerLayout>
+</LinearLayout>
